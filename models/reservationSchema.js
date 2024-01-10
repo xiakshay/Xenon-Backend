@@ -36,7 +36,7 @@ const reservationSchema = new mongoose.Schema({
   message: {
     type: String,
     required: true,
-    minLength: [10, "Phone number must contain 10 Digits."],
+    minLength: [10, "Message atleast contain contain 10 Words."],
     maxLength: [500, "Message Size Only contains 500 characters."],
   },
 });
